@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meat name="viewport" content="width=device-width,initial0sca"></meat>
+    <title>给我一块石头谢谢你</title>
+    <style>
+        .No1{
+            color:burlywood;
+        }
+        .No2{
+            color:chartreuse;
+        }
+        .audio-img{
+            width:100px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div style="
+        background-color:aliceblue;
+        text-align: center;    
+        padding:40px;
+        border: 1px solid blue;
+        ">
+        <h1><b>你是凑企鹅</b></h1>
+        <img src="e90266bba73e9f151ad5111847c276ba14836724.jpg" alt="qiyuan" width="350px" height="350px">
+    </div>
+    <div style="
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+        width:100%">
+        <div style="
+              flex:1;
+              background-color: aqua;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              gap:30px;
+              padding: 15px 50px;">
+              <audio id="myaudio" src="🐧：小企鹅说大道理🐧.mp3"></audio>
+              <img src="Screenshot 2026-03-17 161155.png" width="200px" height="100px" 
+              class="audio-img"
+              onclick="toggleAudio()"
+              style="
+              padding-left: 0px;">
+              <script>
+                const audio=document.getElementById('myaudio');
+                const startSecond=8;
+                let isFirstplay=true;
+                function toggleAudio(){
+                    if(audio.paused){
+                        if(isFirstplay){
+                            audio.currentTime=startSecond;
+                            isFirstplay=false;
+                        }
+                        audio.play();
+                        console.log("播放");
+                    }
+                    else{
+                        audio.pause()
+                        console.log("暂停");
+                    }
+                }
+              </script>
+              <p class="No1">听高松灯<b style="display: block;">讲大道理</b></p>
+              
+        </div>
+   
+    <div style="
+        flex:0 0 700px;
+        background-color:blueviolet;
+        text-align: center;
+        max-width: 700px;
+        margin: 0px auto;
+        padding:15px;
+        line-height: 1.7;
+        color:yellow">
+        <p>咕咕嘎嘎</p>
+        <p>咕咕嘎嘎</p>
+        <p>咕咕嘎嘎</p>
+    </div>
+    <div style="
+         flex:1;
+         background-color:black;
+         align-items:center;
+         display: flex;
+         justify-content: center;
+         padding:15px">
+         <p class="No2">不要忘记了：<br>justify-items是水平方向<br>align-items是垂直方向</p>
+         </div>
+    </div>
+    <div style="
+          background-color:brown;
+          text-align: center;
+          padding:40px;
+          "
+         >
+          <p style="
+          font-size:45px">咕咕嘎嘎！</p>
+          <a href="https://www.bilibili.com/video/BV1rCJ9zHEFJ/?spm_id_from=333.337.search-card.all.click"  style="padding-bottom: 0px;">不要扣辟谷</a>
+    </div>    
+</body>
+</html>
